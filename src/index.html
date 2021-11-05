@@ -63,8 +63,8 @@
             League CS:GO is the new online league in Counter-Strike: Global Offensive, with $100,000 total prize pool. 16 teams from Europe and the CIS will take part in the League, with 4 teams going to League through open qualifiers.
           </div>
           <div class="header__buttons">
-            <button class="header__buttons--button button">Read announcement</button>
-            <button class="header__buttons--button button">get tickets</button>
+            <button onclick="window.location.href = '#shedule_and_result';" class="header__buttons--button button">Read announcement</button>
+            <button onclick="window.location.href = '#stages';"class="header__buttons--button button" id="header__button__selected">get tickets</button>
           </div>
         </div>
       </div>
@@ -76,7 +76,7 @@
     </div>
 
     <main class="page__main">
-      <section class="shedule_and_result">
+      <section class="shedule_and_result" id="shedule_and_result">
         <span class="page__main__shedule">Расписание и результаты</span>
         <div class="main__buttons">
           <button class="button page__main__button page__main__button-selected">
@@ -1093,7 +1093,7 @@
           </a>
         </div>
       </section>
-      <section class="stages">
+      <section class="stages" id="stages">
         <div class="stages--container">
           <div class="stages__text-container">
             <span class="stages__title">Этапы проведения</span>
@@ -1151,10 +1151,422 @@
       </section>
     </main>
 
+    <section class="matches matches--mobile">
+      <div class="matches--container matches--container__first matches--container__visible">
+        <div class="match__card">
+          <div class="match__card__all">
+            <div class="match__card-container">
+              <div class="match__card__header">
+                <span class="match__card__title">Asia Minor: Play-off</span>
+                <div class="match__card__date-container">
+                  <div class="match__card__date">
+                    29 Oct
+                  </div>
+                  <div class="match__card__time">
+                    19:00
+                  </div>
+                </div>
+              </div>
+
+              <div class="match__card__teams">
+                <div class="match__card__teams__images">
+                  <img class="team__image" src="./images/opponents.png" alt="Team#1">
+                  <img class="team__image" src="./images/forze.png" alt="Team#2">
+                </div>
+                <div class="match__card__teams__info">
+                  <div class="team team__first">
+                    <span class="team__title">
+                      Regina Watson
+                    </span>
+                    <button class="team__coefficient">
+                      3.22
+                    </button>
+                  </div>
+                  <div class="team team__second">
+                    <span class="team__title">
+                      Regina Watson
+                    </span>
+                    <button class="team__coefficient">
+                      53.22
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="match__card__footer">
+                <span class="match__card__footer__title">
+                  Starts in: 5 hours 39 min • Bо 3
+                </span>
+                <a href="https://gg.bet/en" target="_blank">
+                  <img src="./images/ggbet.png" alt="ggbet" class="footer__img">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hover__button--container">
+            <button class="hover__button">
+              Whatch Live
+            </button>
+          </div>
+        </div>
+        <div class="match__card">
+          <div class="match__card__all">
+            <div class="match__card-container">
+              <div class="match__card__header">
+                <span class="match__card__title">Asia Minor: Play-off</span>
+                <div class="match__card__date-container">
+                  <div class="match__card__date">
+                    29 Oct
+                  </div>
+                  <div class="match__card__time">
+                    19:00
+                  </div>
+                </div>
+              </div>
+
+              <div class="match__card__teams">
+                <div class="match__card__teams__images">
+                  <img class="team__image" src="./images/opponents.png" alt="Team#1">
+                  <img class="team__image" src="./images/forze.png" alt="Team#2">
+                </div>
+                <div class="match__card__teams__info">
+                  <div class="team team__first">
+                    <span class="team__title">
+                      Regina Watson
+                    </span>
+                    <button class="team__coefficient">
+                      3.22
+                    </button>
+                  </div>
+                  <div class="team team__second">
+                    <span class="team__title">
+                      Regina Watson
+                    </span>
+                    <button class="team__coefficient">
+                      53.22
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="match__card__footer">
+                <span class="match__card__footer__title">
+                  Starts in: 5 hours 39 min • Bо 3
+                </span>
+                <a href="https://gg.bet/en" target="_blank">
+                  <img src="./images/ggbet.png" alt="ggbet" class="footer__img">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hover__button--container">
+            <button class="hover__button">
+              Whatch Live
+            </button>
+          </div>
+        </div>
+        <div class="match__card">
+          <div class="match__card__all">
+            <div class="match__card-container">
+              <div class="match__card__header">
+                <span class="match__card__title">Asia Minor: Play-off</span>
+                <div class="match__card__date-container">
+                  <div class="match__card__date">
+                    29 Oct
+                  </div>
+                  <div class="match__card__time">
+                    19:00
+                  </div>
+                </div>
+              </div>
+
+              <div class="match__card__teams">
+                <div class="match__card__teams__images">
+                  <img class="team__image" src="./images/opponents.png" alt="Team#1">
+                  <img class="team__image" src="./images/forze.png" alt="Team#2">
+                </div>
+                <div class="match__card__teams__info">
+                  <div class="team team__first">
+                    <span class="team__title">
+                      Regina Watson
+                    </span>
+                    <button class="team__coefficient">
+                      3.22
+                    </button>
+                  </div>
+                  <div class="team team__second">
+                    <span class="team__title">
+                      Regina Watson
+                    </span>
+                    <button class="team__coefficient">
+                      53.22
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="match__card__footer">
+                <span class="match__card__footer__title">
+                  Starts in: 5 hours 39 min • Bо 3
+                </span>
+                <a href="https://gg.bet/en" target="_blank">
+                  <img src="./images/ggbet.png" alt="ggbet" class="footer__img">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hover__button--container">
+            <button class="hover__button">
+              Whatch Live
+            </button>
+          </div>
+        </div>
+        <div class="match__card">
+          <div class="match__card__all">
+            <div class="match__card-container">
+              <div class="match__card__header">
+                <span class="match__card__title">Asia Minor: Play-off</span>
+                <div class="match__card__date-container">
+                  <div class="match__card__date">
+                    29 Oct
+                  </div>
+                  <div class="match__card__time">
+                    19:00
+                  </div>
+                </div>
+              </div>
+
+              <div class="match__card__teams">
+                <div class="match__card__teams__images">
+                  <img class="team__image" src="./images/opponents.png" alt="Team#1">
+                  <img class="team__image" src="./images/forze.png" alt="Team#2">
+                </div>
+                <div class="match__card__teams__info">
+                  <div class="team team__first">
+                    <span class="team__title">
+                      Regina Watson
+                    </span>
+                    <button class="team__coefficient">
+                      3.22
+                    </button>
+                  </div>
+                  <div class="team team__second">
+                    <span class="team__title">
+                      Regina Watson
+                    </span>
+                    <button class="team__coefficient">
+                      53.22
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="match__card__footer">
+                <span class="match__card__footer__title">
+                  Starts in: 5 hours 39 min • Bо 3
+                </span>
+                <a href="https://gg.bet/en" target="_blank">
+                  <img src="./images/ggbet.png" alt="ggbet" class="footer__img">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hover__button--container">
+            <button class="hover__button">
+              Whatch Live
+            </button>
+          </div>
+        </div>
+        <div class="match__card">
+          <div class="match__card__all">
+            <div class="match__card-container">
+              <div class="match__card__header">
+                <span class="match__card__title">Asia Minor: Play-off</span>
+                <div class="match__card__date-container">
+                  <div class="match__card__date">
+                    29 Oct
+                  </div>
+                  <div class="match__card__time">
+                    19:00
+                  </div>
+                </div>
+              </div>
+
+              <div class="match__card__teams">
+                <div class="match__card__teams__images">
+                  <img class="team__image" src="./images/opponents.png" alt="Team#1">
+                  <img class="team__image" src="./images/forze.png" alt="Team#2">
+                </div>
+                <div class="match__card__teams__info">
+                  <div class="team team__first">
+                    <span class="team__title">
+                      Regina Watson
+                    </span>
+                    <button class="team__coefficient">
+                      3.22
+                    </button>
+                  </div>
+                  <div class="team team__second">
+                    <span class="team__title">
+                      Regina Watson
+                    </span>
+                    <button class="team__coefficient">
+                      53.22
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="match__card__footer">
+                <span class="match__card__footer__title">
+                  Starts in: 5 hours 39 min • Bо 3
+                </span>
+                <a href="https://gg.bet/en" target="_blank">
+                  <img src="./images/ggbet.png" alt="ggbet" class="footer__img">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hover__button--container">
+            <button class="hover__button">
+              Whatch Live
+            </button>
+          </div>
+        </div>
+        <div class="match__card">
+          <div class="match__card__all">
+            <div class="match__card-container">
+              <div class="match__card__header">
+                <span class="match__card__title">Asia Minor: Play-off</span>
+                <div class="match__card__date-container">
+                  <div class="match__card__date">
+                    29 Oct
+                  </div>
+                  <div class="match__card__time">
+                    19:00
+                  </div>
+                </div>
+              </div>
+
+              <div class="match__card__teams">
+                <div class="match__card__teams__images">
+                  <img class="team__image" src="./images/opponents.png" alt="Team#1">
+                  <img class="team__image" src="./images/forze.png" alt="Team#2">
+                </div>
+                <div class="match__card__teams__info">
+                  <div class="team team__first">
+                    <span class="team__title">
+                      Regina Watson
+                    </span>
+                    <button class="team__coefficient">
+                      3.22
+                    </button>
+                  </div>
+                  <div class="team team__second">
+                    <span class="team__title">
+                      Regina Watson
+                    </span>
+                    <button class="team__coefficient">
+                      53.22
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="match__card__footer">
+                <span class="match__card__footer__title">
+                  Starts in: 5 hours 39 min • Bо 3
+                </span>
+                <a href="https://gg.bet/en" target="_blank">
+                  <img src="./images/ggbet.png" alt="ggbet" class="footer__img">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hover__button--container">
+            <button class="hover__button">
+              Whatch Live
+            </button>
+          </div>
+        </div>
+        <div class="match__card">
+          <div class="match__card__all">
+            <div class="match__card-container">
+              <div class="match__card__header">
+                <span class="match__card__title">Asia Minor: Play-off</span>
+                <div class="match__card__date-container">
+                  <div class="match__card__date">
+                    29 Oct
+                  </div>
+                  <div class="match__card__time">
+                    19:00
+                  </div>
+                </div>
+              </div>
+
+              <div class="match__card__teams">
+                <div class="match__card__teams__images">
+                  <img class="team__image" src="./images/opponents.png" alt="Team#1">
+                  <img class="team__image" src="./images/forze.png" alt="Team#2">
+                </div>
+                <div class="match__card__teams__info">
+                  <div class="team team__first">
+                    <span class="team__title">
+                      Regina Watson
+                    </span>
+                    <button class="team__coefficient">
+                      3.22
+                    </button>
+                  </div>
+                  <div class="team team__second">
+                    <span class="team__title">
+                      Regina Watson
+                    </span>
+                    <button class="team__coefficient">
+                      53.22
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="match__card__footer">
+                <span class="match__card__footer__title">
+                  Starts in: 5 hours 39 min • Bо 3
+                </span>
+                <a href="https://gg.bet/en" target="_blank">
+                  <img src="./images/ggbet.png" alt="ggbet" class="footer__img">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hover__button--container">
+            <button class="hover__button">
+              <div>
+                <img src="./images/arrow__button.png" alt="">
+              </div>
+              <span>Whatch Live</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="footer-container">
         <span class="footer__registrated">Зарегистрировано: 24</span>
-        <div class="footer__time">Осталось: 15мин 30сек</div>
+        <div class="footer__time">
+          <span class="countdown-title">Осталось: </span>
+          <div id="countdown" class="countdown">
+            <div class="countdown-number">
+              <span class="minutes countdown-time"></span>
+              <span class="countdown-text">мин</span>
+            </div>
+            <div class="countdown-number">
+              <span class="seconds countdown-time"></span>
+              <span class="countdown-text">сек</span>
+            </div>
+          </div>
+        </div>
         <table>
           <col style="width:11%">
           <col style="width:89%">
