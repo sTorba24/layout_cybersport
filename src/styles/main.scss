@@ -72,6 +72,11 @@
   background-color: #000;
   color: #fff;
   padding-top: 145px;
+
+  @media (max-width: 768px) {
+    padding-top: 48px;
+  }
+
   &__shedule {
     display: block;
     font-weight: bold;
