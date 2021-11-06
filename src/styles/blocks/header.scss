@@ -1,0 +1,136 @@
+.header {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  margin-bottom: 145px;
+
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  display: block;
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  &__toggler {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+  
+    &--container {
+      display: flex;
+      justify-content: center;
+  
+      gap: 18px;
+    }
+  }
+  
+  &__content {
+    width: 40%;
+    @media (min-width: 1920px){
+      width: 740px;
+    }
+    margin-left: 10.4vw;
+    &__head {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 13px;
+      padding-bottom: 30px;
+      margin-bottom: 163px;
+      border-bottom: 1px solid #f3a917;
+      @media (max-width: 1620px) {
+        margin-bottom: 100px;
+        padding-top: 8px;
+        padding-bottom: 15px;
+      }
+    }
+    &__logo {
+      width: 88px;
+      height: 64px;
+      background-image: url(../images/logo.png);
+    }
+    &__links {
+      display: flex;
+      align-items: center;
+      gap: 42px;
+    }
+
+    &__main {
+      width: calc(40vw - 40px);
+      @media (min-width: 1920px){
+        width: 740px;
+      }
+      color: #fff;
+      &--img {
+        object-fit: contain;
+        width: 191px;
+        height: 60px;
+        margin-bottom: 35px;
+      }
+      
+      &__title {
+        margin-bottom: 35px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+
+        @media (max-width:1920px) {
+          font-size: 30px;
+        }
+        line-height: 73px;
+      }
+
+      &__text {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+
+        margin-bottom: 220px;
+        color: #FAFAFA;
+        @media (max-width: 1920px) {
+         font-size: 14px;
+         line-height: 17px;
+         margin-bottom: 150px;
+        }
+
+        @media (max-width: 1620px) {
+          font-size: 14px;
+          line-height: 17px;
+          margin-bottom: 100px;
+         }
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 153px;
+    text-align: center;
+    @media (max-width: 1920px) {
+      margin-bottom: 120px;
+    }
+
+    @media (max-width: 1620px) {
+      margin-bottom: 95px;
+    }
+    &--button {
+      width: 246px;
+      height: 50px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: uppercase;
+      /* identical to box height */
+
+      letter-spacing: 0.01em;
+
+      color: #000;
+      background-color: #f3a917;
+    }
+  }
+}

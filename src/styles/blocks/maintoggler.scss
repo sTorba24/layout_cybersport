@@ -1,0 +1,25 @@
+.main__toggler {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: auto 0;
+
+  &--container {
+    display: flex;
+    justify-content: center;
+    height: 85px;
+    gap: 18px;
+  }
+
+  &--arrow-left {
+    display: flex;
+    justify-content: center;
+  }
+
+  &--arrow-right {
+    display: flex;
+    justify-content: center;
+  }
+}

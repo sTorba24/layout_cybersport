@@ -1,0 +1,30 @@
+.hover__button {
+  width: 50%;
+  height: 40px;
+  background-color: #f3a917;
+  color: #fff;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+
+  &--container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+}
