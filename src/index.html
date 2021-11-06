@@ -63,8 +63,12 @@
             League CS:GO is the new online league in Counter-Strike: Global Offensive, with $100,000 total prize pool. 16 teams from Europe and the CIS will take part in the League, with 4 teams going to League through open qualifiers.
           </div>
           <div class="header__buttons">
-            <button onclick="window.location.href = '#shedule_and_result';" class="header__buttons--button button">Read announcement</button>
-            <button onclick="window.location.href = '#stages';"class="header__buttons--button button" id="header__button__selected">get tickets</button>
+            <a href="#shedule_and_result" class="header__buttons--button button">
+              <span class="button_txt">Read announcement</span>
+            </a>
+            <a href="#stages" class="header__buttons--button button" id="header__button__selected">
+              <span class="button_txt">get tickets</span>
+            </a>
           </div>
         </div>
       </div>
@@ -79,12 +83,16 @@
       <section class="shedule_and_result" id="shedule_and_result">
         <span class="page__main__shedule">Расписание и результаты</span>
         <div class="main__buttons">
-          <button class="button page__main__button page__main__button-selected">
-            Matches
-          </button>
-          <button class="button page__main__button">
-            Battles
-          </button>
+          <a class="button page__main__button page__main__button-selected">
+            <span class="button_txt">
+              Matches
+            </span>
+          </a>
+          <a class="button page__main__button">
+            <span class="button_txt">
+              Battles
+            </span>
+          </a>
         </div>
         <section class="matches">
           <div class="matches--container matches--container__first matches--container__visible">
@@ -1469,7 +1477,6 @@
         </div>
       </div>
     </section>
-
     <footer class="footer">
       <div class="footer-container">
         <span class="footer__registrated">Зарегистрировано: 24</span>
@@ -1557,5 +1564,21 @@
       </div>
     </footer>
     <script src="scripts/main.js"></script>
+    <script>
+      const anchors = document.querySelectorAll('a[href*="#"]')
+
+      for (let anchor of anchors) {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault()
+          
+          const blockID = anchor.getAttribute('href').substr(1)
+          
+          document.getElementById(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          })
+        })
+      }
+    </script>
   </body>
 </html>

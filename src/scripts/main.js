@@ -1,4 +1,8 @@
 'use strict';
+import smoothscroll from 'smoothscroll-polyfill';
+
+window.__forceSmoothScrollPolyfill__ = true;
+smoothscroll.polyfill();
 
 const slider = document.querySelector('.header');
 

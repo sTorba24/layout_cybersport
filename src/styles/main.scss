@@ -15,6 +15,10 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
   /* identical to box height */
 
   letter-spacing: 0.01em;
@@ -23,6 +27,14 @@
   cursor: pointer;
   border: 1px solid #F3A917;
   background-color: #f3a917;
+
+  &_txt {
+    height: 20px;
+    margin: auto 0;
+    // font-weight: 600;
+    // font-size: 16px;
+    // line-height: 20px;
+  }
 }
 
 .first {
@@ -57,7 +69,9 @@
 @import './blocks/mainblocks.scss';
 
 .page__main {
+  background-color: #000;
   color: #fff;
+  padding-top: 145px;
   &__shedule {
     display: block;
     font-weight: bold;
